@@ -390,4 +390,23 @@ The [Environment variables and secrets](/build-reference/variables) reference ex
   description="See complete reference of available properties for EAS Build."
   href="/eas/json/#eas-build"
   Icon={BuildIcon}
-/>
+eas.json {
+  "cli": {
+    "version": ">= 3.0.0"
+  },
+  "build": {
+    "development": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
